@@ -58,7 +58,7 @@ function Feature({title, emoji, description}: {title: string, emoji: string, des
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
+    <section className={clsx(styles.features, 'features-section')}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

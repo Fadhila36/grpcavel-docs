@@ -7,7 +7,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Grpcavel',
   tagline: 'Modern gRPC Framework for Laravel',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -63,8 +66,12 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     metadata: [
-      {name: 'keywords', content: 'grpc, laravel, php, microservices, roadrunner, framework, api'},
-      {name: 'description', content: 'A high-performance, code-first gRPC framework for Laravel powered by RoadRunner.'},
+      {name: 'keywords', content: 'grpc, laravel, php, microservices, roadrunner, framework, api, code-first, protobuf, high performance, backend, enterprise'},
+      {name: 'description', content: 'Grpcavel is a high-performance, code-first gRPC framework for Laravel powered by RoadRunner. Build lightning-fast microservices with a Laravel-native developer experience.'},
+      {name: 'og:title', content: 'Grpcavel - Modern gRPC Framework for Laravel'},
+      {name: 'og:description', content: 'Build lightning-fast microservices with a Laravel-native developer experience.'},
+      {name: 'og:type', content: 'website'},
+      {name: 'twitter:card', content: 'summary_large_image'},
     ],
     navbar: {
       title: 'Grpcavel',
